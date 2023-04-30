@@ -6630,6 +6630,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles/main.scss */ "./src/styles/main.scss");
 /* harmony import */ var _tsc_topnav__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../tsc/topnav */ "./src/tsc/topnav.ts");
 /*
+    //MAIN TYPESCRIPT FILE 
+    //FOR FINAL BUNDLE
+*/
+
+/*
     STYLES
 */
 
