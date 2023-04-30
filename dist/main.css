@@ -1,0 +1,67 @@
+/*!**************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/styles/main.scss ***!
+  \**************************************************************************************************************************************************************************************/
+/*
+    MAIN SCSS FILE
+
+*/
+top-navigation .top-navigation {
+  margin: 0 130px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fff;
+}
+top-navigation .top-navigation .top-navigation--header {
+  color: #004021;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+}
+top-navigation .top-navigation .top-navigation--header .logo {
+  background-image: url(images/3be3f2c8ea96ab354568.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 2px;
+  width: 65px;
+  height: 65px;
+}
+top-navigation .top-navigation .top-navigation--links {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 0 20px;
+  width: 250px;
+  height: 37px;
+  border: 1px solid #004021;
+}
+top-navigation .top-navigation .top-navigation--links a {
+  color: #004021;
+  text-decoration: none;
+}
+top-navigation .top-navigation .social-media-links {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+top-navigation .top-navigation .social-media-links .svg-inline--fa {
+  cursor: pointer;
+  margin: 0 7px;
+  width: 25px !important;
+  height: 25px !important;
+  color: #004021;
+}
+
+/*# sourceMappingURL=main.css.map*/

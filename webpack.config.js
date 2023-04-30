@@ -20,22 +20,39 @@ module.exports = {
             //FOR THE CSS AND SASS
             {
                 test: /\.s?css$/i,
+
                 use: [
                     {
                         loader: MiniCssExtractPlugin.loader,
                         options: { publicPath: ""}
                     },
+                    {
+                        loader: 'css-loader',
+                       // options: { ...}
+                    }, 
 
-                     "css-loader",
-                     "sass-loader"
-                ]
+                    /* 
+                    resolve-url-loader enables fully relative asset paths instead of root relative paths 
+                    reference documentation of resolve-url-loader for details
+                    */
+                    {
+                        loader: 'resolve-url-loader', // <-- VERY IMPORTANT
+                       // options: { ...}
+                    },
+                    {
+                        loader: 'sass-loader',
+                        options: {
+                            sourceMap: true, // <-- !!IMPORTANT!!
+                        }
+                    }
+                ],
             },
 
             //FOR THE IMAGES
             {
                 test: /\.(png|jpe?g|gif|svg)$/i,
-                type: "asset" //"asset/resource" //otputs into folder // ==== //"asset/inline" //inlines it into the javacsript output file //best use for small images === //"assset" it automatically determines whether it should be inline or resource according to size of files
-                ,
+                type: "asset", //"asset/resource" //outputs into folder // ==== //"asset/inline" //in lines it into the javascript output file //best use for small images === //"asset" it automatically determines whether it should be inline or resource according to size of files
+
                 // parser: {  //determining the size of the files that can be allowed for "asset/resource"
                 //     dataUrlCondition: {
                 //         maxSize: 30* 1024
@@ -44,6 +61,12 @@ module.exports = {
             },
 
         ]
+    },
+
+    output: {
+        path: path.resolve(__dirname, 'dist'),
+        filename: 'main.js',
+        assetModuleFilename: "images/[hash][ext][query]" //output folder for images in dist
     },
 
     plugins: [
@@ -60,18 +83,13 @@ module.exports = {
         extensions: ['.tsx', '.ts', '.js'],
     },
 
-    output: {
-        path: path.resolve(__dirname, 'dist'),
-        filename: 'main.js',
-        assetModuleFilename: "images/[hash][ext][query]" //output folder for images
-    },
 
     devServer: {
         static: {
             directory: path.join(__dirname, 'dist'),
         },
         compress: true,
-        port: 9000,
+        port: 8000,
         open: true,
     }
 
