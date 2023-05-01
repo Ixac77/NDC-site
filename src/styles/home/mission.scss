@@ -1,0 +1,27 @@
+@import '../common/mixins.scss';
+@import '../common/visuals.scss';
+
+hm-mission {
+    .mission-container {
+        background-image: url('../../assets/images/img1.jpg');
+        @include bg-image();
+        height: 650px;
+
+        .mission--text {
+            padding: 150px 130px 0 130px;
+
+            h1 {
+                color: $color--lighter--green;
+                font-family: 'Inter-semiBold', sans-serif;
+            }
+
+            p {
+                margin: 70px 0;
+                color: $color--lighter--green;
+                @include font--light();
+                font-weight: 900;
+                font-size: 25px;
+            }
+        }
+    }
+}

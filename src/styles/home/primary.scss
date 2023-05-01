@@ -1,0 +1,96 @@
+@import '../common/mixins.scss';
+@import '../common/visuals.scss';
+
+hm-primary {
+    .primary-bg-container {
+        background-color: $color--darker--green;
+        height: 1000px;
+
+        .pri-bg {
+            background-image: url('../../assets/images/img17.jpg');
+            @include bg-image();
+            width: 100%;
+            height: 400px;
+        }
+
+
+        .primary-container {
+            //header
+            .primary-bg--header {
+                @include flex-box--column();
+                color: $color--white;
+                margin: 0 130px;
+                font-family: 'Inter-semiBold';
+                font-size: 30px;
+                padding: 55px 0;
+            }
+
+            //we are ...
+            .pri-bg--text {
+                color: $color--white;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                margin: 0 130px;
+                font-family: 'Inter-Medium', sans-serif;
+
+            }
+
+            //green bg
+            background-image: url('../../assets/images/rectangle.png');
+            @include bg-image();
+            height: 700px;
+
+            //top image and text
+            .primary-container--top {
+                margin: 0 130px;
+                @include flex-box--row();
+
+                .pri-container--top--img_left {
+                    background-image: url('../../assets/images/img3.png');
+                    @include bg-image();
+                    border-radius: 10px;
+                    width: 500px;
+                    height: 400px;
+                    margin-right: 20px;
+                }
+
+                .pri-container--top-text_right {
+                    p {
+                        margin-left: 20px;
+                        color: $color--white;
+                        font-family: 'Inter-extraLight', sans-serif;
+                        font-size: 20px;
+                        width: 400px;
+                        text-align: right;
+                    }
+                }
+            }
+
+            //bottom image and text
+            .primary-container--bottom {
+                margin: 0 130px;
+                @include flex-box--row();
+
+
+                .pri-container--bottom--text_left {
+                    margin-right: 20px;
+                    color: $color--white;
+                    font-family: 'Inter-extraLight', sans-serif;
+                    font-size: 20px;
+                    width: 400px;
+                    text-align: left;
+                }
+
+                .pri-container--bottom--img_right {
+                    background-image: url('../../assets/images/img14.jpg');
+                    @include bg-image();
+                    border-radius: 10px;
+                    width: 500px;
+                    height: 400px;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}

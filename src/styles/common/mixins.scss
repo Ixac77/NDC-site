@@ -18,7 +18,11 @@
     background-size: cover;
 }
 
-@mixin font {
+@mixin font--light {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Roboto', sans-serif;
+}
+
+@mixin font--medium {
+    font-family: 'Open Sans', sans-serif;
 }

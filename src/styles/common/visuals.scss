@@ -4,4 +4,27 @@ $color--lighter--green: #0E6F40;
 $color--darker--green: #004021;
 $color--grey: #F7F7F9;
 
+$fs-10: 10px;
+$fs-20: 20px;
+$fs-30: 30px;
+$fs-40: 40px;
+$fs-50: 50px;
+$fs-60: 60px;
+$fs-70: 70px;
 
+@font-face {
+    font-family: 'Inter-Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../../assets/fonts/Inter-Medium.otf'); // format('otf'),
+}
+
+@font-face {
+    font-family: 'Inter-semiBold';
+    src: url('../../assets/fonts/Inter-SemiBold.otf');
+}
+
+@font-face {
+    font-family: 'Inter-extraLight';
+    src: url('../../assets/fonts/Inter-ExtraLight.otf');
+}

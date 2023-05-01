@@ -3,15 +3,18 @@
 
 top-navigation {
     .top-navigation {
-        margin: 0 130px;
         @include flex-box--row();
         background-color: $color--white;
-
+        top: 0;
+        position: sticky;
+        width: 100%;
+        z-index: 1;
 
         .top-navigation--header {
+            margin-left: 130px;
             color: $color--darker--green;
             @include flex-box--row();
-            @include font();
+            @include font--light();
             font-weight: 900;
 
 
@@ -29,7 +32,7 @@ top-navigation {
         .top-navigation--links {
             @include flex-box--row();
 
-            @include font();
+            @include font--light();
             font-weight: 700;
             
             border-radius: 10px;
@@ -45,7 +48,9 @@ top-navigation {
         }
 
         .social-media-links {
+            margin-right: 130px;
             @include flex-box--row();
+            cursor: pointer;
 
             .svg-inline--fa {
                 cursor: pointer;

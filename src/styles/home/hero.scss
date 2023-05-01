@@ -1,0 +1,81 @@
+@import '../common/visuals.scss';
+@import '../common/mixins.scss';
+
+hm-hero {
+    .hero-container {
+        background-image: url('../../assets/images/hero.png');
+        @include bg-image();
+
+        width: 100%;
+        height: 800px;
+
+        //content
+        .hero--content {
+            position: absolute;
+            width: 615px;
+            height: 570px;
+            left: 130px;
+            top: 180px;
+
+            .hero--content_text {
+                h1 {
+                    @include font--medium();
+                    color: $color--white;
+                    line-height: 65px;
+                    font-weight: 500;
+                    font-size: $fs-50;
+                }
+
+                h2 {
+                    margin-top: 90px;
+                    font-family: 'Inter-semiBold', sans-serif;
+                    color: $color--darker--green;
+                    font-size: 28px;
+                    line-height: 38px;
+                }
+            }
+
+            button {
+                cursor: pointer;
+                border: 1px solid;
+                border-color: $color--darker--green;
+                background-color: $color--darker--green;
+                color: $color--lime--green;
+                margin-top: 90px;
+                width: 170px;
+                height: 50px;
+            }
+        }
+
+        //overlay 
+        .hero--overlay--container {
+            position: relative;
+            top: 730px;
+            left: 130px;
+            border: 1px solid #004021;
+            background-color: $color--darker--green;
+            width: 230px;
+            height: 130px;
+            padding: 5px 10px 0 20px;
+            border-radius: 10px;
+
+            p {
+                font-family: 'Inter-Medium', sans-serif;
+                line-height: 20px;
+                color: $color--white;
+                margin: 10px 0;
+
+                em {
+                    color: $color--lime--green;
+                }
+
+                .svg-inline--fa {
+                    margin-left: 7px;
+                    cursor: pointer;
+                    width: 25px;
+                    height: 25px; 
+                }
+            }
+        }
+    }
+}

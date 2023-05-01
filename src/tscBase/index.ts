@@ -13,3 +13,8 @@ import "../styles/main.scss"
     TOP NAVIGATION
 */
 import "../tsc/topnav";
+
+/*
+    HOME PAGE
+*/
+import '../tsc/Home/home';
